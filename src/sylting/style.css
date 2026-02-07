@@ -2,7 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1a426a; /* op1: #1a426a op2: #214954 */
+    background-image: url("../../public/images/bg.png");
+    background-size: contain;
 }
 html::-webkit-scrollbar { /*hide website scrollbar*/
     display: none;

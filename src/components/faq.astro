@@ -1,25 +1,29 @@
 ---
 interface Props {
+    offset?: boolean;
     question: string;
     answer: string;
 }
-const {question,answer} = Astro.props;
+const {offset,question,answer} = Astro.props;
 ---
 <style>
-div {
-    height: 200px;
+.card {
+    height: 300px;
     width: 300px;
-    background-color: #02dac0;
+    background-color: #42769c;
     margin: 10px;
     display: block;
     border-radius: 10px;
-    border: 20px solid #9eeee5;
+    border: 20px solid #BBD3E9;
 }
-p {
+.card p {
     padding: 10px;
 }
+.card.offset {
+  margin-top: 70px;
+}
 </style>
-<div>
+<div class={`card ${offset ? 'offset' : ''}`}>
 <h2>{question}</h2>
 <p>{answer}</p>
 </div>
