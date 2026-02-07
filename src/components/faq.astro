@@ -15,10 +15,10 @@ const {offset,question,answer} = Astro.props;
     display: block;
     border-radius: 10px;
     border: 20px solid rgba(220, 238, 255, 0.3);
-    animation: back 0.5s ease forwards;
+    transition: transform 0.2s ease;
 }
 .card:hover {
-    animation: enlargen 0.5s ease forwards;
+    transform: scale(1.2) rotate(5deg);
 }
 .card p {
     padding: 10px;
@@ -30,14 +30,6 @@ const {offset,question,answer} = Astro.props;
 }
 h2 {
     color: rgb(255, 255, 255) !important;
-}
-@keyframes enlargen {
-    0% {height: 300px; width: 300px; transform: rotate(0deg);}
-    100% {height: 350px; width: 350px; transform: rotate(5deg);}
-}
-@keyframes back {
-    0% {height: 350px; width: 350px; transform: rotate(5deg);}
-    100% {height: 300px; width: 300px; transform: rotate(0deg);}
 }
 </style>
 <div class={`card ${offset ? 'offset' : ''}`}>
