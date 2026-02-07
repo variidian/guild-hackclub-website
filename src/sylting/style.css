@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1e3f5e; /* op1: #1a426a op2: #214954 */
+    background-color: #1a426a; /* op1: #1a426a op2: #214954 */
 }
 html::-webkit-scrollbar { /*hide website scrollbar*/
     display: none;
@@ -13,5 +13,11 @@ html::-webkit-scrollbar { /*hide website scrollbar*/
     font-family:'Space Mono', monospace;
 }
 p {
-    margin: 20 0 20 0px 
+    margin: 20px 0 20 0;
+}
+h1 {
+    font-size: xx-large;
+}
+h2 {
+    font-size: large;
 }

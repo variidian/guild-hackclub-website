@@ -1,7 +1,40 @@
 ---
-import '../sylting/style.css';
+import '../sylting/style.css'
+import FAQ from '../components/faq.astro'
+import Faq from '../components/faq.astro'
+const faqitems= [
+	{
+		question: "Who can participate?",
+		answer: "Highschoolers globally! Anyone aged 13-18 is eligible :]"
+	},
+	{
+		question: "How much does it cost?",
+		answer: "Its completely free! although, customs might occur outside of the US when we ship your prizes"
+	}
+] /*#50d9ff*/
 ---
-
+<style>
+input[type="email"] {
+	padding: 20px 60px 20px 60px;
+	border-radius: 20px;
+	outline: none;
+	background-color: #02dac0;
+	font-size: 25px;
+	border: 0px;
+	transform: rotate(-4deg);
+	margin-bottom: 40px;
+}
+input::placeholder {
+	color: rgb(255, 255, 255);
+}
+input[type="email"]:focus {
+	outline: none;
+}
+div.faq {
+display: flex;
+justify-content: center;
+}
+</style>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -12,6 +45,20 @@ import '../sylting/style.css';
 	<body>
 		<img src="/images/topart.png" alt="top orpheus guild wide art" style="max-width: 100%;">
 		<p><i>date - date</i></p>
+		<form method="POST">
+		<label>
+		<input type="email" id="email" placeholder="enter your email..." required/>
+		</label>
+		</form>
+		<h1>FAQ</h1>
+		<div class="faq">
+		{faqitems.map((item) => (
+		<Faq
+		question={item.question}
+		answer={item.answer}
+		/>
+		))}
+		</div>
 		<p><i>a hack club ysws made with ❤️ by @turdle, @renran sun, @cafeEntity, @Tanuki and @xvcf</i></p>
 	</body>
 </html>
