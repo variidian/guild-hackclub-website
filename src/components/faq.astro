@@ -1,38 +1,39 @@
 ---
 interface Props {
-    offset?: boolean;
-    question: string;
-    answer: string;
+	offset?: boolean;
+	question: string;
+	answer: string;
 }
-const {offset,question,answer} = Astro.props;
+const { offset, question, answer } = Astro.props;
 ---
-<style>
-.card {
-    height: 300px;
-    width: 300px;
-    background-color: rgba(66, 119, 156, 0.9);
-    margin: 10px;
-    display: block;
-    border-radius: 10px;
-    border: 20px solid rgba(220, 238, 255, 0.3);
-    transition: transform 0.2s ease;
-}
-.card:hover {
-    transform: scale(1.2) rotate(5deg);
-}
-.card p {
-    padding: 10px;
-    color: rgb(255, 255, 255) !important;
-}
 
-.card.offset {
-  margin-top: 70px;
-}
-h2 {
-    color: rgb(255, 255, 255) !important;
-}
+<style>
+	.card {
+		height: 300px;
+		width: 300px;
+		background-color: rgba(66, 119, 156, 0.9);
+		margin: 10px;
+		display: block;
+		border-radius: 10px;
+		border: 20px solid rgba(220, 238, 255, 0.3);
+		transition: transform 0.2s ease;
+	}
+	.card:hover {
+		transform: scale(1.2) rotate(5deg);
+	}
+	.card p {
+		padding: 10px;
+		color: rgb(255, 255, 255) !important;
+	}
+
+	.card.offset {
+		margin-top: 70px;
+	}
+	h2 {
+		color: rgb(255, 255, 255) !important;
+	}
 </style>
-<div class={`card ${offset ? 'offset' : ''}`}>
-<h2>{question}</h2>
-<p>{answer}</p>
+<div class={`card ${offset ? "offset" : ""}`}>
+	<h2>{question}</h2>
+	<p>{answer}</p>
 </div>
