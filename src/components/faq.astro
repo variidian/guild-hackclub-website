@@ -17,6 +17,8 @@ const { offset, question, answer } = Astro.props;
 		border-radius: 10px;
 		border: 20px solid rgba(220, 238, 255, 0.3);
 		transition: transform 0.2s ease;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.card:hover {
 		transform: scale(1.2) rotate(5deg);
@@ -31,6 +33,8 @@ const { offset, question, answer } = Astro.props;
 	}
 	h2 {
 		color: rgb(255, 255, 255) !important;
+		font-size: larger;
+		font-weight: bold;
 	}
 </style>
 <div class={`card ${offset ? "offset" : ""}`}>
