@@ -8,7 +8,8 @@ export default {
         30: "30deg"
       },
       rotate: {
-        5: "5deg"
+        5: "5deg",
+        m5: "-5deg"
       }
     },
   },
