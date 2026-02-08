@@ -3,8 +3,16 @@ export default {
     "./src/**/*.{astro,html,js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      hueRotate: {
+        30: "30deg"
+      },
+      rotate: {
+        5: "5deg"
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 };
 

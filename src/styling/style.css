@@ -1,27 +1,21 @@
-@import "tailwindcss/preflight";
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(253, 253, 238, 0.5);
-    background-image:  linear-gradient(#ada29f 1px, transparent 1px), linear-gradient(to right, #ada29f 1px, #fdfdee 1px);
-    background-size: 40px 40px;
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(253, 253, 238, 0.5);
+  background-image: linear-gradient(#ada29f 1px, transparent 1px), linear-gradient(to right, #ada29f 1px, #fdfdee 1px);
+  background-size: 40px 40px;
 }
-html::-webkit-scrollbar { /*hide website scrollbar*/
-    display: none;
-  }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 * {
-    text-align: center;
-    color: #1a426a;
-    font-family:'Space Mono', monospace;
-}
-p {
-    margin: 20px 0 20 0;
-}
-h1 {
-    font-size: xx-large;
-}
-h2 {
-    font-size: large;
+  text-align: center;
+  color: #1a426a;
+  font-family: 'Space Mono', monospace;
 }
