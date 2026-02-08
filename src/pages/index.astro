@@ -1,8 +1,6 @@
 ---
-import '../../dist/output.css';
-import FAQ from '../components/faq.astro'
 import Faq from '../components/faq.astro'
-import '../styling/style.css'
+import Layout from '../layouts/layout.astro';
 const faqitems= [
 	{
 		question: "Who can participate?",
@@ -34,7 +32,6 @@ const faqitems= [
 ]
 ---
 <style>
-
 input[type="email"] {
 	padding: 20px 60px 20px 60px;
 	border-radius: 20px;
@@ -62,14 +59,7 @@ flex-wrap: wrap;
 gap: 35px;
 }
 </style>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<Layout>
 		<img src="https://assets.hackclub.com/flag-orpheus-left.svg" alt="orpheus flag - left" class="absolute top-0 left-0 z-10 block">
 		<img src="/images/topart.png" alt="top orpheus guild wide art" class="max-w-full">
 		<p><i>date - date</i></p>
@@ -79,14 +69,13 @@ gap: 35px;
 		</label>
 		</form>
 		<h1>HOW DOES THIS WORK?</h1>
-		<p> how it works art n text stuffs here (form a team, do quests, submit your game, get prizes)</p>
 		<div class="flex justify-center flex-wrap gap-4"> 
 		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in" src="/images/1.png" alt="sign up w email & join the slack"/>
 		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in" src="/images/2.png" alt="find a team- create or request to join a party at the board"/>
-		<img src="/images/2.png" alt="placeholder"/>
-		<img src="/images/2.png" alt="placeholder"/>
-		<img src="/images/2.png" alt="placeholder"/>
-		<img src="/images/2.png" alt="placeholder"/>
+		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in"src="/images/2.png" alt="placeholder"/>
+		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in"src="/images/2.png" alt="placeholder"/>
+		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in"src="/images/2.png" alt="placeholder"/>
+		<img class="hover:hue-rotate-30 transform hover:rotate-5 transition-all duration-300 ease-in"src="/images/2.png" alt="placeholder"/>
 		</div>
 		<h1>WHAT DO I GET?</h1>
 		<p>prize images here in an arc, text above explaining payout rates</p>
@@ -101,5 +90,4 @@ gap: 35px;
 		))}
 		</div>
 		<p><i>a hack club ysws made with ❤️ by @turdle, @renran sun, @cafeEntity, @Tanuki and @xvcf</i></p>
-	</body>
-</html>
+</Layout>

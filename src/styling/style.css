@@ -19,3 +19,6 @@ html::-webkit-scrollbar {
   color: #1a426a;
   font-family: 'Space Mono', monospace;
 }
+h1 {
+  font-size: xx-large;
+}
