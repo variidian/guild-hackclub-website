@@ -1,7 +1,7 @@
 ---
-import '../sylting/style.css'
 import FAQ from '../components/faq.astro'
 import Faq from '../components/faq.astro'
+import '../sylting/style.css'
 const faqitems= [
 	{
 		question: "Who can participate?",
@@ -14,7 +14,7 @@ const faqitems= [
 	},
 	{
 		question: "Is this real?",
-		answer: "Yes! Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects."
+		answer: "Yes! Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We're providing grants so you can make awesome projects."
 	},
 	{ 
 		offset: true,
@@ -58,7 +58,7 @@ div.faq {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 40px;
+gap: 35px;
 }
 </style>
 <html lang="en">
@@ -69,15 +69,18 @@ gap: 40px;
 		<title>Astro</title>
 	</head>
 	<body>
-		<img src="/images/topart.png" alt="top orpheus guild wide art" style="max-width: 100%;">
+		<img src="https://assets.hackclub.com/flag-orpheus-left.svg" alt="orpheus flag - left" class="absolute">
+		<img src="/images/topart.png" alt="top orpheus guild wide art" class="max-w-full">
 		<p><i>date - date</i></p>
 		<form method="POST">
 		<label>
 		<input type="email" id="email" placeholder="enter your email..." required/>
 		</label>
 		</form>
+		<h1>HOW DOES THIS WORK?</h1>
 		<p> how it works art n text stuffs here (form a team, do quests, submit your game, get prizes)</p>
-		<p>prize images here</p>
+		<h1>WHAT DO I GET?</h1>
+		<p>prize images here in an arc, text above explaining payout rates</p>
 		<h1>FAQ</h1>
 		<div class="faq">
 		{faqitems.map((item) => (
