@@ -7,10 +7,6 @@ export default {
       hueRotate: {
         30: "30deg"
       },
-      rotate: {
-        5: "5deg",
-        m5: "-5deg"
-      }
     },
   },
   plugins: [
